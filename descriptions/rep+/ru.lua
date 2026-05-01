@@ -37,6 +37,15 @@ local trinkets = {
 }
 EID:updateDescriptionsViaTable(trinkets, EID.descriptions[languageCode].trinkets)
 
+---------- Cards & Runes ----------
+
+local cards = {
+    [38] = { "Беркано", "Призывает 3 саранчи на текущую комнату" } -- Berkano
+}
+
+EID:updateDescriptionsViaTable(cards, EID.descriptions[languageCode].cards)
+
+
 ---------- Conditions ----------
 EID.descriptions[languageCode].ConditionalDescs["5.100.566"] = nil -- Dream Catcher (Greed) - In Rep+, the dream preview works in greed mode as well, so no changes needed
 
